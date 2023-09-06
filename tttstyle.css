@@ -1,40 +1,42 @@
 table {
     border-collapse: collapse;
-    baackground-color: white;
-  }
-  td {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
     border: 1px solid #FF77CD;
     width: 50px;
     height: 50px;
     text-align: center;
     vertical-align: middle;
-  }
-  button {
+}
+button {
     width: 100%;
     height: 100%;
-  }
+}
 
-  @keyframes show-gif {
+@keyframes show-gif {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
   
-  .cell img {
+.cell img {
     animation-name: show-gif;
     animation-duration: 1s;
     animation-iteration-count: 1;
     width: 100px;
     height: 100px;
-  }
+}
 
-  h1 {
+h1 {
     font-family: 'Londrina Shadow', cursive;
         color: #FF77CD;
         font-size: 38px;
 
-  }
+}
   
-  p {
+p {
     font-family: 'Londrina Shadow', cursive;
         color: #FF77CD;
         font-size: 18px;
@@ -48,6 +50,5 @@ table {
 }
 
 button.reset {
-    background-color: rgb(150, 144, 238);
+    background-color: lightgreen;
 }
-    

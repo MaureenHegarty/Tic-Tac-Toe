@@ -88,20 +88,16 @@ function resetGame() {
 
 function checkWinner() {
     // Check for a winner here
-    if (currentPlayer) {
+    if (currentPlayer === "x") {
         xWins++;
         document.getElementById("xWins").innerHTML = xWins;
         resetGame();
-    } else if (currentPlayer) {
+    } else if (currentPlayer === "0") {
         oWins++;
         document.getElementById("oWins").innerHTML = oWins;
         resetGame();
     }
 }
-
-
-
-   location.reload();
 
 
 //event handlers =====================================
@@ -135,6 +131,7 @@ function handleClick(event) {
     }
  }
 
+
  function checkWinner() {
     // Loop through the winning combinations and compare the values of the buttons
     for (let i = 0; i < winningCombinations.length; i++) {
@@ -167,5 +164,3 @@ function handleClick(event) {
        return;
     }
 }
-
- 
