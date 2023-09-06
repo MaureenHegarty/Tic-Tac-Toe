@@ -15,6 +15,8 @@ const winningCombinations = [
   [0, 4, 8],
   [2, 4, 6]
 ];
+let xWins = 0;
+let oWins = 0;
 
 //set event listeners =============================
 
@@ -98,13 +100,15 @@ function checkWinner() {
       const c = winningCombinations[i][2];
 
       if (boxValues[a] === "x" && boxValues[b] === "x" && boxValues[c] === "x") {
+        xWins++;
         console.log("win"); // This is the line you need to add
-        document.getElementById("print").innerHTML = "Player X won";
+        document.getElementById("print").innerHTML = "Player X won. Total wins: " + xWins;
         disableAllBoxes();
         colorBoxes(a,b,c);
         return;
       } else if (boxValues[a] === "0" && boxValues[b] === "0" && boxValues[c] === "0") {
-        document.getElementById("print").innerHTML = "Player O won";
+        oWins++;
+        document.getElementById("print").innerHTML = "Player O won. Total wins: " + oWins;
         disableAllBoxes();
         colorBoxes(a,b,c);
         return;
