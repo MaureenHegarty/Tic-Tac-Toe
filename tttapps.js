@@ -1,6 +1,5 @@
 //global variables  ==================================
 
-
 const boxes = Array.from(document.querySelectorAll(".cell"));
 const boxValues = [];
 for (let i = 0; i < boxes.length; i++) {
@@ -17,15 +16,13 @@ const winningCombinations = [
   [2, 4, 6]
 ];
 
-//set event listeners  =============================
-
+//set event listeners =============================
 
 for (let i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", handleClick);
 }
 
 //util functions====================================
-
 
 function displayX(button) {
     button.innerHTML = "X";
@@ -62,11 +59,9 @@ function resetGame() {
    location.reload();
 }
 
+//event handlers =====================================
 
-
-//event handlers  =====================================
-
-var currentPlayer = "x"; // or "0"
+let currentPlayer = "x"; // or "0" // This is the line that changed from const to let
 
 function handleClick(event) {    
     const button = event.target;
@@ -103,6 +98,7 @@ function checkWinner() {
       const c = winningCombinations[i][2];
 
       if (boxValues[a] === "x" && boxValues[b] === "x" && boxValues[c] === "x") {
+        console.log("win"); // This is the line you need to add
         document.getElementById("print").innerHTML = "Player X won";
         disableAllBoxes();
         colorBoxes(a,b,c);
