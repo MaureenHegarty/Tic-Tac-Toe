@@ -101,6 +101,9 @@ function checkWinner() {
 
 
 
+   location.reload();
+
+
 //event handlers =====================================
 
 let currentPlayer = "x"; // or "0" // This is the line that changed from const to let
