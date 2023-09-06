@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="tttstyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Londrina+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Barbie Tic-Tac-Toe</h1>
+<table>
+<tr>
+<td><button class="cell"></button></td>
+<td><button class="cell"></button></td>
+<td><button class="cell"></button></td>
+</tr>
+<tr>
+<td><button class="cell"></button></td>
+<td><button class="cell"></button></td>
+<td><button class="cell"></button></td>
+</tr>
+<tr>
+<td><button class="cell"></button></td>
+<td><button class="cell"></button></td>
+<td><button class="cell"></button></td>
+</tr>
+</table>
+<img id="winning-image" src="assets/Spinning Barbie Tic Tac Toe.gif" style="display: none;">
+<p id="print"></p>
+<p>Player X wins: <span id="xWins">0</span></p>
+<p>Player O wins: <span id="oWins">0</span></p>
+
+<p>Round: <span id="round">0</span></p>
+
+<button onclick="resetGame()">Reset Game</button>
+
+<script src="tttapps.js"></script>
+</body>
+</html>
