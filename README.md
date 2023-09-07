@@ -20,7 +20,7 @@ $ node app.js
 - I numbered the boxes 1-9
 - then I started with player X and “if/else if” statements and operators
 - however this soon looked to be a very inefficient way of writing the code for a simple game with a set number of winning combos (8) and turn-taking between 2 players. Also the way I was writing the code, the variables were all specific to each function and did not seem to be global.
-- I investigated alternatives, both by googling and speaking with my neighbour. 
+- I investigated alternatives, by googling and speaking with my neighbour who suggested arrays. 
 - I went back to the 4 sections and started with the global variables, making the boxes(cells), the box values, and the winning combos all arrays and all const’s.
 - then I added the event listener of clicking on the boxes
 - for the checkWinner function I used the logical AND operator after looping through the winning combos array and searched online how to record the incrementing wins of both player X and player O
@@ -33,11 +33,10 @@ $ node app.js
 
 
 ## Bugs to fix
-- reset game button can be clicked when no game has been played, so it looks like Round 4, Round 5 etc. when no round/game has been played
-- the round count only starts counting AFTER the first round so it is always incrementing one round behind
+- reset game button can be clicked when no game has been played, so it can look like Round 4, Round 5 etc. when no round/game has been played
 
 ## Lessons learnt
-- Keep better notes along the way for a comprehensive wireframe and track what worked and what didn’t 
+- Keep better notes along the way for a  wireframe and track all the errors and research 
 
 ## Future features
 - have a “Try Again” graphic which displays after the match is tied that is different from just clicking the reset button

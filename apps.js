@@ -18,7 +18,7 @@ const winningCombinations = [
 //round is the variable which is keeping track of the current number of games - it increments by 1 each time the resetGame function is called
 let xWins = 0;
 let oWins = 0;
-let round = 0;
+let round = 1;
 
 //set event listeners =============================
 //the for loop iterates over the boxes array, for each box element the eventListener is added that will call the handleClick function when the box is clicked.
