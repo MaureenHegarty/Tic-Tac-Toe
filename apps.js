@@ -30,25 +30,25 @@ for (let i = 0; i < boxes.length; i++) {
 
 function displayX(button) {
     const img = document.createElement("img");
-    img.src = "assets/X Tic Tac Toe .gif"; // Replace with the path to the animated X GIF
+    img.src = "assets/X Tic Tac Toe .gif"; // I have replaced the path to the animated X GIF
     button.appendChild(img);
     button.value = "x";
     
-    // Replace the animated GIF with a static image after 1 second
+    // I have replaced the animated GIF with a static image after 1 second
     setTimeout(() => {
-        img.src = "assets/X Tic Tac Toe static.png"; // Replace with the path to the static X image
+        img.src = "assets/X Tic Tac Toe static.png"; // I have replaced the path to the static X image
     }, 1000);
 }
 
 function displayO(button) {
     const img = document.createElement("img");
-    img.src = "assets/O Tic Tac Toe .gif"; // Replace with the path to your animated O GIF
+    img.src = "assets/O Tic Tac Toe .gif"; // I have replaced the path to the animated O GIF
     button.appendChild(img);
     button.value = "0";
     
-    // Replace the animated GIF with a static image after 1 second
+    // I have replaced the animated GIF with a static image after 1 second
     setTimeout(() => {
-        img.src = "assets/O Tic Tac Toe static.png"; // Replace with the path to your static O image
+        img.src = "assets/O Tic Tac Toe static.png"; // I have replaced the path to your static O image
     }, 1000);
 }
 
@@ -102,11 +102,11 @@ function checkWinner() {
 
 //event handlers =====================================
 
-let currentPlayer = "x"; // or "0" // This is the line that changed from const to let
+let currentPlayer = "x"; 
 
 function handleClick(event) {    
     const button = event.target;
-    // Display the image of the current player on the button
+    
     if (currentPlayer === "x") {
         displayX(button);
         boxValues[boxes.indexOf(button)] = "x";
