@@ -160,6 +160,12 @@ function handleClick(event) {
          document.getElementById("print").innerHTML = "Player O is the Winner!";
          disableAllBoxes();
          colorBoxes(a,b,c);
+
+         document.getElementById("winning-image").style.display = "block";
+         setTimeout(() => {
+        document.getElementById("winning-image").style.display = "none";
+        }, 5000);
+        document.getElementById("winning-audio").play();
          return;
        }
     }
