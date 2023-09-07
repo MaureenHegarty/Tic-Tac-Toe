@@ -142,14 +142,22 @@ function handleClick(event) {
        if (boxValues[a] === "x" && boxValues[b] === "x" && boxValues[c] === "x") {
          xWins++;
          document.getElementById("xWins").innerHTML = xWins;
-         document.getElementById("print").innerHTML = "Player X won";
+         document.getElementById("print").innerHTML = "Player X is the Winner!";
          disableAllBoxes();
          colorBoxes(a,b,c);
+
+        document.getElementById("winning-image").style.display = "block";
+         setTimeout(() => {
+        document.getElementById("winning-image").style.display = "none";
+        }, 5000);
+        document.getElementById("winning-audio").play();
+
+
          return;
        } else if (boxValues[a] === "0" && boxValues[b] === "0" && boxValues[c] === "0") {
          oWins++;
          document.getElementById("oWins").innerHTML = oWins;
-         document.getElementById("print").innerHTML = "Player O won";
+         document.getElementById("print").innerHTML = "Player O is the Winner!";
          disableAllBoxes();
          colorBoxes(a,b,c);
          return;
