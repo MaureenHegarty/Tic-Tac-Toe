@@ -12,11 +12,12 @@ Barbie Tic Tac Toe
 ![Screenshot](/assets/Barbie-Tic-Tac-Toe.png)
 
 ## Planning & Problem Solving
-- my starting point was breaking down the global variables, event listeners, util functions, and event handlers.  
+- I started by looking at the html and how to insert a table 
+- I thought about what the global variables, event listeners, util functions, and event handlers might be.  
 - the global variables to me were the cells in the table, the buttons, and the possible winning combinations by player X or O
 - I numbered the boxes 1-9
 - then I started with player X and “if/else if” statements and operators
-- however this soon looked to be a very inefficient way of writing the code for a simple game with a set number of winning combos (8) and turn-taking between 2 players. Also the way I was writing the code, the variables were all specific to each function and did not seem to be global.
+- however this soon looked to be an inefficient way of writing the code for a simple game with a set number of winning combos (8) and turn-taking between 2 players. Also the way I was writing the code, the variables were all specific to each function and did not seem to be global.
 - I investigated alternatives, by googling and speaking with my neighbour who suggested arrays. 
 - I went back to the 4 sections and started with the global variables, making the boxes(cells), the box values, and the winning combos all arrays and all const’s.
 - then I added the event listener of clicking on the boxes
