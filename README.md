@@ -8,11 +8,8 @@ Barbie Tic Tac Toe
 
 ## About
 - This is a traditional game of Tic-Tac-Toe, or noughts and crosses which displays the symbols of X’s and O’s, as two players take turns clicking on the boxes of a three-by-three grid. The player who gets three of their symbols in a horizontal, vertical, or diagonal row is the winner.
-$ git clone my-awesome-app
-$ cd my-awesome-app
-$ node app.js
-```
-! [in-app screenshot]( https://github.com/MauzzaH/Tic-Tac-Toe/blob/main/Barbie-Tic-Tac-Toe.png)
+
+![Screenshot](/assets/Barbie-Tic-Tac-Toe.png)
 
 ## Planning & Problem Solving
 - my starting point was breaking down the global variables, event listeners, util functions, and event handlers.  
